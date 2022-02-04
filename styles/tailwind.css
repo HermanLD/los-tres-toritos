@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mobile-dropdown {
+  transform: rotateX(-90deg);
+  transform-origin: top center;
+  opacity: 0.3;
+  visibility: hidden;
+}
+
+.mobile-dropdown[data-is-expanded="true"] {
+  transform: rotateX(0deg);
+  opacity: 1;
+  visibility: visible;
+}
